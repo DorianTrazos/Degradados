@@ -98,3 +98,9 @@ body {
     radial-gradient(circle at 112%, #ffd700 10% 15%, #6a0dad 15% 25%, transparent 25%),
     linear-gradient(to right, #b22222 0% 20%, #1a1a1a 20% 35%, #b22222 35% 55%, #1a1a1a 55% 70%, #b22222 70% 90%, #1a1a1a 90% 100%);
 }
+
+.flag-rainbow {
+  width: 300px;
+  height: 200px;
+  background: radial-gradient(circle, red 20%, orange 35%, yellow 50%, green 65%, blue 75%, indigo 85%, violet 95%);
+}
