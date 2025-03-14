@@ -26,4 +26,75 @@ nav ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #111;
+  color: aliceblue;
+  text-align: center;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 900px;
+  margin-inline: auto;
+}
+
+.flag {
+  position: relative;
+  width: 250px;
+  height: 175px;
+  margin-bottom: 0.5rem;
+  border: 2px solid aliceblue;
+}
+
+.flag-armenia {
+  background-image: linear-gradient(#d90012 33%, #0033a0 33% 66%, #f2a800 66%);
+}
+
+.flag-chad {
+  background-image: linear-gradient(to right, #002664 33%, #fecb00 33% 66%, #c60c30 66%);
+}
+
+.flag-congo {
+  background-image: linear-gradient(to right bottom, #009543 40%, #fbde4a 40% 60%, #da1a35 60%);
+}
+
+.flag-greenland {
+  background-image: linear-gradient(#fff 50%, #c8102e 50%);
+}
+
+.flag-greenland::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(#c8102e 50%, #fff 50%);
+}
+
+.flag-madagascar {
+  background-image: linear-gradient(to right, #fff 35%, transparent 25%), linear-gradient(#fc3d32 50%, #007e3a 50%);
+}
+
+.flag-seychelles {
+  background-image: linear-gradient(-10deg, #007a33 20%, transparent 20%), linear-gradient(-20deg, #fff 35%, transparent 35%),
+    linear-gradient(-39deg, #d22730 55%, transparent 55%), linear-gradient(-57deg, #fed141 70%, transparent 70%);
+  background-color: #002f6c;
+}
+
+.flag-bangladesh {
+  background-image: radial-gradient(circle at 100px, #f42a41 30%, #006a4e 30%);
+}
+
+.flag-solaria {
+  background-image: radial-gradient(circle at center, #fed141 20%, #fc3d32 20% 40%, #f2a800 40%);
+}
+
+.flag-drakonia {
+  background-image: radial-gradient(circle at -30px, #ffd700 10% 15%, #6a0dad 15% 25%, transparent 25%),
+    radial-gradient(circle at 112%, #ffd700 10% 15%, #6a0dad 15% 25%, transparent 25%),
+    linear-gradient(to right, #b22222 0% 20%, #1a1a1a 20% 35%, #b22222 35% 55%, #1a1a1a 55% 70%, #b22222 70% 90%, #1a1a1a 90% 100%);
 }
